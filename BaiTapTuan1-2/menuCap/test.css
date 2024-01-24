@@ -1,0 +1,64 @@
+ul {
+    list-style: none;
+    display: flex;
+
+}
+
+li {
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+
+.hover2::after,.hover3::after {
+    content: "  ";
+    border: 30px solid transparent;
+    transform: translatey(15px);
+    position: absolute;
+    
+}
+
+.menu_Inner {
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.hover:hover .menu2 {
+    display: block;
+}
+
+.hover,
+.hover2,
+.hover3 {
+    position: relative;
+}
+
+.menu2,
+.menu3,
+.menu4 {
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.hover2:hover .menu3 {
+    display: block;
+}
+.hover3:hover .menu4 {
+    display: block;
+}
+
+.menu3 {
+    left: 100%;
+}
+.menu4{
+    left:100%
+}
