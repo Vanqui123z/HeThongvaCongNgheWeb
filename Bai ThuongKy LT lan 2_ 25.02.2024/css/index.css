@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{display: flex; justify-content: center; align-items: center;}
+body {
+    font-family: 'Times New Roman', Times, serif;
+    width: 960px;
+    padding: 10px;
+}
+
+/* chung */
+a{text-decoration: none;text-wrap: nowrap;}
+h2{color: red; padding: 10px;}
+img{width: 100%;}
+/* nav */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; align-items: center;
+
+}
+nav menu ul{
+    list-style: none;
+    display: flex;    
+}
+nav menu ul li{ margin: 10px; padding: 10px;}
+nav .search{display: flex;}
+nav .search input{margin: 0 10px; outline: none;}
+nav .search button{background-color: blue; border: none; box-shadow: 1px 1px 1px gray;border-radius: 5px;color: white;}
+
+/* header */
+header {
+    width: 100%
+}
+header img{width: 100%; height: auto;}
+
+
+/* main */
+
+main{ display: flex;}
+/* section */
+section {
+    width: 70%;
+    background: linear-gradient(to right, #7fb4ec, #FFFFFF, #7fb4ec);
+}
+section .title{text-align: center}
+section .introduction{display: flex;;}
+section .content{width: 50%;}
+
+section .paragrap p{margin: 20px; text-align: justify;}
+section form{width: 50%;margin: 20px;}
+section form fieldset{box-shadow: 3px 5px 5px gray; border-radius: 10px;height: 100%; padding: 10px;display: flex; flex-direction: column; justify-content: space-around;}
+section form input[type="text"]{ padding: 5px;  border-radius: 5px; outline: none;  box-shadow: 2px 1px 5px rgb(201, 195, 195); }
+section form .button_command{display: flex; justify-content: space-around; }
+section form button{ box-shadow: 3px 3px 3px gray;border-radius:5px; border: 1px solid transparent; padding: 5px; font-weight: bold;}
+/* aside */
+aside {
+    width: 30%;
+    text-align: center;
+    font-size: small;
+}
+
+aside h2{text-shadow: 1px 1px 5px rgb(205, 56, 22); border-bottom: 2px dashed red; margin-bottom:10px;}
+aside img{box-shadow: 3px 3px 2px gray;}
+
+/* footer */
+footer {
+    width: 100%;
+    display: flex; justify-content: space-between; padding: 10px;
+    background-color: #ccff00;
+}
