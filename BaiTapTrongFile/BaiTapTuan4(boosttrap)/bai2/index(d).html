@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai2(d)</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+    <style>
+        [class*=col-] {
+            padding: 0;
+            margin: 0;
+        }
+        [class*=row] {
+            padding: 0;
+        }
+    </style>
+<body>
+    <div class="container">
+        <form action="" class="was-validated">
+            <div class="row">
+                <div class="input-groud col">
+                    <label for="">First name</label>
+                    <input type="text" class="form-control"  required placeholder="Mark">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose a first name</div>
+                </div>
+                <div class="input-groud col">
+                    <label for="">Last name</label>
+                    <input type="text" class="form-control"  required placeholder="Otto">
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose a last name</div>
+                </div>
+                <div class="input-groud col">
+                    <label for="">Username</label>
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">@</span>
+                    <input type="text" class="form-control"  required placeholder="Username">
+                    </div>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose a username.</div>
+                </div>
+            </div>
+    
+                <div class="row">
+                    <div class="input-groud col">
+                        <label for="">City</label>
+                        <input type="text" class="form-control"  required placeholder="City">
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please choose a city</div>
+                    </div>
+                    <div class="input-groud col">
+                        <label for="">State</label>
+                        <input type="text" class="form-control"  required placeholder="State">
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please choose a state</div>
+                    </div>
+                    <div class="input-groud col">
+                        <label for="">Zip</label>
+                        <input type="text" class="form-control"  required placeholder="Zip">
+                        <div class="valid-feedback">Looks good!</div>
+                        <div class="invalid-feedback">Please choose a zip</div>
+                    </div>
+                </div>
+                <div class="row form-check">
+                    <input type="checkbox" class="form-check-input"  required>
+                    <label for="" class="form-check-lable">Agree to terms and conditions</label>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">Please choose a zip</div>
+                        
+                </div>
+                <div class="row">
+                    <button class="btn btn-primary mt-3" type="submit">Submit form</button>
+                </div>
+        </form>
+    </div>
+</body>
+
+</html>

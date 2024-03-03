@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+
+<style>
+    .row {
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    .active{color:orange}
+    .title-modal:active{color: orange;}
+</style>
+
+<body>
+    <button class="btn btn-primary" type="button" data-toggle="modal" data-target="#myModal">Open modal</button>
+
+    <!-- modal -->
+
+    <div class="modal" id="myModal">
+        <div class="modal-dialog">
+            <div class="modal-content p-3">
+                <div class="modal_header row m-0 ">
+                    <div class="col row ">
+                        <div class="carousel-indicators position-relative">
+                                <h4 data-target="#demo" data-slide-to="0" class="col-5 title-modal">Đăng kí</h4>
+                            <h4 class="col">/</h4>
+                                    <h4 data-target="#demo" data-slide-to="1" class="col-5 title-modal">Đăng nhập</h4>
+                        </div>
+                    </div>
+                    <button class="close text-right btn" data-dismiss="modal" type="button">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div id="demo" class="carousel slide"  data-interval="false" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <form action="">
+                                    <div class="row">
+                                        <input type="text" class="form-control" placeholder="Ho ten">
+                                    </div>
+                                    <div class="row">
+                                        <input class="form-control col" type="number" placeholder=" So dien thoai">
+                                        <select name="" id="" class="form-control col">
+                                            <option selected disabled hidden>Chọn giới tính</option>
+                                            <option value="male">Male</option>
+                                            <option value="female">Female</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <input type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                    <div class="row">
+                                        <input class="col-6 form-control" type="password" name="" id=""
+                                            placeholder="Mật khẩu">
+                                        <input class="col-6 form-control" type="password" name="" id=""
+                                            placeholder="Xác nhận mật khẩu">
+                                    </div>
+                                    <div class="row">
+                                        <select name="" id="" class="col-6 form-control">
+                                            <option selected disabled hidden>Chọn thành phố</option>
+                                            <option value="">Hà Nội</option>
+                                            <option value="">Hồ Chí Minh</option>
+                                        </select>
+                                        <select name="" id="" class="col-6 form-control">
+                                            <option selected disabled hidden>Quận</option>
+                                            <option value="">Gò Gấp</option>
+                                            <option value="">Tân Bình</option>
+                                            <option value=""> 1</option>
+                                            <option value=""> 2</option>
+                                        </select>
+                                    </div>
+                                    <div class="row">
+                                        <input type="text" class="form-control" placeholder="Địa chỉ">
+                                    </div>
+                                    <div class="row">
+                                        <input type="date" class="form-control" name="" id="" placeholder="Chọn ngày">
+                                    </div>
+                                    <div class="row">
+                                        <input type="checkbox" class="form-check mr-3">
+                                        <div>Tôi đã đọc và chấp nhận chính sách của chương trình</div>
+                                    </div>
+                                </form>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn w-100 btn-primary">Dang ki</button>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <p>Vui lòng đăng nhập</p>
+                                <input class="form-control row p-3" type="email" placeholder="Email">
+                                <input class="form-control row p-3" type="password" placeholder="Password">
+                                <div class="row">
+                                    <a href="#" class="nav-link">Quên mật khẩu ?</a>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="submit" class="btn w-100 btn-primary">Dang nhap</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

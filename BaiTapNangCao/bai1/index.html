@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai1</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 10rem;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backgroud_header">
+        <img src="./img1.jpg" alt="">
+    </div>
+    <nav>
+        <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="#">Trang chủ</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-toggle="modal" data-target="#modelId">Đăng kí</a>
+            </li>
+        </ul>
+    </nav>
+    <table class="table">
+        <h3 class="text-center">LIST OF MEMBERS</h3>
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Giới tính</th>
+                <th>Số điện thoại</th>
+                <th>Ngày sinh</th>
+                <th>Địa chỉ</th>
+                <th>Khóa học</th>
+                <th>Học phí</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Hoàng Lâm</td>
+                <td>Giới tính</td>
+                <td>090008888</td>
+                <td>20/3/2010</td>
+                <td>123 Nguyễn Du P5 Gô Vấp TPHCM</td>
+                <td>6 tuần</td>
+                <td>8,000,000</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- Modal -->
+    <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">THÔNG TIN HỌC VIÊN</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="row m-2">
+                            <label for="" class="col-4">Họ và tên</label>
+                            <input type="text" id="name" class="col-8 form-control">
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Giới tính</label>
+                            <div class="form-check col-8">
+                                <div class="row">
+                                    <div class="col-5 ">
+                                        <input type="radio" id="male" name="gender" class="form-checkox-input" value="male"> <span>Nam</span>
+                                    </div>
+                                    <div class="col-5">
+                                        <input type="radio" id="female" name="gender" class="form-check-input" value="female"> <span>Nu</span>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Số điện thoại</label>
+                            <input type="number" id="sdt" class="col-8 form-control">
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Ngày sinh</label>
+                            <input type="date" id="birthday" class="col-8 form-control">
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Địa chỉ</label>
+                            <input type="text" id="adress" class="col-8 form-control">
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Bạn muốn tham gia khóa học nào</label>
+                            <select id="course" class="form-control col-8">
+                                <option value="1 tuần">1 tuần</option>
+                                <option value="2 tuần">2 tuần</option>
+                                <option value="3 tuần">3 tuần</option>
+                            </select>
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Học phí</label>
+                            <input type="number" id="money" class="col-8 form-control">
+                        </div>
+                        <div class="row m-2">
+                            <label for="" class="col-4">Ảnh đại điện</label>
+                            <input type="file" class="col-8 form-control">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer row">
+                    <button class="btn btn-success col m-3" onclick="onButtonClick()" data-dismiss="modal">Luu</button>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+
+
+</body>
+<script>
+   
+    function onButtonClick() {
+        var name = document.getElementById("name").value;
+        var sdt = document.getElementById("sdt").value;
+        var birthday = document.getElementById("birthday").value;
+        var adress = document.getElementById("adress").value;
+        var course = document.getElementById("course").value;
+        var money = document.getElementById("money").value;
+        var checkMale = document.getElementById("male");
+        var checkFemale = document.getElementById("female");
+
+        var gender =checkGender(checkMale,checkFemale);
+        
+        var arrs = [name,gender, sdt, birthday, adress, course, money]
+        var tbody = document.getElementsByTagName("tbody")[0];
+        var tr =document.createElement("tr");
+        var tdSTT= document.createElement("td");
+        tdSTT.innerText = document.getElementsByTagName("tr").length;
+        tr.appendChild(tdSTT);
+        arrs.forEach(function(item) {var td = document.createElement("td");td.innerText = item;tr.appendChild(td)});
+        tbody.appendChild(tr)
+    }
+    function checkGender(checkMale,checkFemale){
+       var gender="";
+        if(checkMale.checked){
+            gender = "Nam";
+        }else if(checkFemale.checked){
+            gender = "Nu";
+        }
+        return gender;
+    }
+
+</script>
+</html>

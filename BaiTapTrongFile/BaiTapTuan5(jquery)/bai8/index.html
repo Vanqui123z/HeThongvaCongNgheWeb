@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+</head>
+
+<body>
+    <form method="get" class="cmxform" id="form1" action="">
+        <fieldset>
+            <legend>Login Form</legend>
+            <p>
+                <label>Username</label>
+                <input name="user" title="Please enter your username (at least 3 characters)" required minlength="3">
+            </p>
+            <p>
+                <label>Password</label>
+                <input type="password" maxlength="12" name="password" title="Please enter your
+       password, between 5 and 12 characters" required minlength="5">
+            </p>
+            <div class="error"> </div>
+            <p>
+                <input class="submit" type="submit" value="Login">
+            </p>
+        </fieldset>
+    </form>
+
+</body>
+<script>
+    $('.keyup-email-2').keyup(function () {
+        $('span.error-keyup-8').remove();
+        var inputVal = $(this).val();
+        var emailFreeReg = /^([\w-]+\.)*[\w-]+@(?!gmail\.com)(?!yahoo\.com)(?!hotmail\.com)(?!aol\.com)[\w-]+(\.[\w-]+)*$/;
+        if (!emailFreeReg.test(inputVal)) {
+            $(this).after('<span class="error error-keyup-8">No Free Email Addresses.</span>');
+        }
+    });
+    
+</script>
+
+</html>

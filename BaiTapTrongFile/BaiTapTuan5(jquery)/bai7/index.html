@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký thành viên</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <form id="registerForm">
+        <label for="username">Tên đăng nhập:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Mật khẩu:</label><br>
+        <input type="password" id="password" name="password"><br>
+        <label for="confirmPassword">Nhập lại mật khẩu:</label><br>
+        <input type="password" id="confirmPassword" name="confirmPassword"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br>
+        <input type="submit" value="Đăng ký">
+    </form>
+
+   
+</body>
+<script>
+    $(document).ready(function() {
+        $('#registerForm').submit(function(e) {
+            e.preventDefault();
+
+            var username = $('#username').val();
+            var password = $('#password').val();
+            var confirmPassword = $('#confirmPassword').val();
+            var email = $('#email').val();
+
+            if (username.length <= 4) {
+                alert('Tên đăng nhập phải lớn hơn 4 ký tự');
+                return false;
+            }
+
+            if (password === '') {
+                alert('Mật khẩu không được trống');
+                return false;
+            }
+
+            if (password !== confirmPassword) {
+                alert('Mật khẩu nhập lại phải giống mật khẩu ở trên');
+                return false;
+            }
+
+            if (email === '' || !validateEmail(email)) {
+                alert('Email không được trống và phải đúng định dạng');
+                return false;
+            }
+    
+            // Nếu tất cả các điều kiện đều thoả mãn, hàm sẽ trả về true và form sẽ được submit
+            return true;
+        });
+    });
+    
+    function validateEmail(email) {
+        var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return re.test(email);
+    }
+    
+</script>
+
+
+</html>

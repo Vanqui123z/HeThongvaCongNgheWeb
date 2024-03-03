@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery - Tạo cấu trúc Folder</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        .toggle {
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>
+            <a class="toggle">muc 1</a>
+            <ul style="display: none;">
+                <li><a class="toggle">Mục con 1</a>
+                    <ul style="display: none;">
+                        <li><a class="toggle">muc 1.1</a>
+                            <ul style="display: none;">
+                                <li>muc 1.1.1</li>
+                                <li>muc 1.1.2</li>
+                                <li>muc 1.1.3</li>
+                        </li>
+                    </ul>
+                </li>
+                <li>muc 1.2</li>
+                <li>muc 1.3</li>
+        </li>
+    </ul>
+    <li>Mục con 2</li>
+    <li>Mục con 3</li>
+    </ul>
+    </li>
+    </ul>
+
+    <script>
+        $(document).ready(function (e) {
+            $(".toggle").click(function () {
+                var ul = $(this).nextAll("ul").first();
+                if (ul.is(":visible")) {
+                    ul.hide();
+                } else {
+                    ul.show();
+                }
+            });
+        });
+        console.log( $(this).nextAll("ul"))
+    </script>
+</body>
+
+</html>

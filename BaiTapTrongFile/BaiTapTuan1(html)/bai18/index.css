@@ -1,0 +1,34 @@
+<<<<<<< HEAD
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1ff;
+}
+
+form {
+    background-color: white;
+    width: 250px;
+    height: 70px;
+    padding: 10px 0 10px 10px;
+=======
+* {
+    margin: 0 auto;
+    padding: 1px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f1f1ff;
+}
+
+form {
+    background-color: white;
+    width: 250px;
+    height: 70px;
+    padding: 10px 0 10px 10px;
+>>>>>>> origin/main
+}
