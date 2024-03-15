@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <style>
+        .content .item {
+            border-radius: 5px;
+            border: 1px solid rgb(142, 136, 136);
+            margin-right:10px;
+            padding: 0;
+        }
+        .content .item img{ width: 100%;}
+    </style>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class="container">
+            <nav class="nav nav-light bg-dark align-items-center">
+                <a href="#" class="nav-brand col">
+                    <img src="./logo.png" alt="logo" height="80px">
+                </a>
+                <ul class="nav col flex-nowrap">
+                    <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./book.html">Book</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                </ul>
+                <div class="nav-right col">
+                    <i class="m-2 text-white fa-solid fa-user"></i>
+                    <i class="m-2 text-white fa-solid fa-cart-shopping"></i>
+                    <i class="m-2 text-white fa-solid fa-magnifying-glass"></i>
+                    <button type="submit" class="text-white btn btn-warning"> Check Order</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="text-center">Our Menu</h1>
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#">All</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Burger</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pizza</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Panda</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Pruit</a></li>
+            </ul>
+            <div class="content row mt-5">
+                <div class="item col"><img src="./sp2.jpg" alt="">
+                    <div class="title bg-dark p-4">
+                        <h5 class="text-white">Pizza</h5>
+                        <p class="text-white m-0">Each dish is a symphony of flavors, from grilled meats to fresh salads.
+                            Enjoy fresh
+                            seafood and a selection of wines, all explosive for an unforgettable culinary
+                            experience.</p>
+                            <div class="cart float-right mr-2"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+                    </div>
+                </div>
+                <div class="item col"><img src="./sp1.jpeg" alt="">
+                    <div class="title bg-dark p-4">
+                        <h5 class="text-white">Pizza</h5>
+                        <p class="text-white m-0">Each dish is a symphony of flavors, from grilled meats to fresh salads.
+                            Enjoy fresh
+                            seafood and a selection of wines, all explosive for an unforgettable culinary
+                            experience.</p>
+                            <div class="cart float-right mr-2"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+                    </div>
+                </div>
+                <div class="item col"><img src="./sp3.jpg" alt="">
+                    <div class="title bg-dark p-4">
+                        <h5 class="text-white">Pizza</h5>
+                        <p class="text-white m-0">Each dish is a symphony of flavors, from grilled meats to fresh salads.
+                            Enjoy fresh
+                            seafood and a selection of wines, all explosive for an unforgettable culinary
+                            experience.</p>
+                            <div class="cart float-right mr-2"><i class="fa-solid fa-cart-shopping text-white"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

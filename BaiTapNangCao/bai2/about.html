@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <style>
+      main{
+        background-image: url("backgroud1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:89vh;
+        display: flex; justify-content: center; align-items: center;
+      }
+      main .content{background-color: rgba(190, 188, 188,0.3);}
+      .submit{ border-radius:30px!important; }
+    </style>
+</head>
+
+<body>
+    <header class="bg-dark">
+        <div class="container">
+            <nav class="nav nav-light bg-dark align-items-center">
+                <a href="#" class="nav-brand col">
+                    <img src="./logo.png" alt="logo" height="80px">
+                </a>
+                <ul class="nav col flex-nowrap">
+                    <li class="nav-item"><a class="nav-link" href="./menu.html">Menu</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./book.html">Book</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./order.html">Order</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./about.html">About</a></li>
+                </ul>
+                <div class="nav-right col">
+                    <i class="m-2 text-white fa-solid fa-user"></i>
+                    <i class="m-2 text-white fa-solid fa-cart-shopping"></i>
+                    <i class="m-2 text-white fa-solid fa-magnifying-glass"></i>
+                    <button type="submit" class="text-white btn btn-warning"> Check Order</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+   <main>
+    <div class="container">
+        <div class="content p-3">
+            <div class="item ">
+                <h2 class="text-white">Fast Food Restaurent</h2>
+                <p class="text-white">Each dish is a symphony of flavors, from grilled meats to fresh salads. Enjoy fresh
+                    seafood and a selection of wines, all explosive for an unforgettable culinary
+                    experience.</p>
+                <button  type="submit" class="btn btn-warning submit">Check now</button>
+            </div>
+        </div>
+    </div>
+   </main>
+</body>
+
+</html>

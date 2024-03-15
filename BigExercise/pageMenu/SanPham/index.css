@@ -1,0 +1,15 @@
+.container{display: block;}
+
+main .content img{ max-height:200px;}
+main .content .row{ margin:20px 0 !important;}
+main .item{max-width:200px; border: 1px solid #E0E0E0;}
+
+
+.boLoc {border-right: 1px solid rgb(148, 143, 143,0.5); padding: 10px;}
+.content_boLoc h6{ border-bottom: 1px solid  rgb(148, 143, 143,0.5); margin-top: 10px;}
+
+.toggle_button{background-color: black !important;}
+
+.carousel-indicators{bottom: auto;}
+
+.content .title{min-height: 40px; }
