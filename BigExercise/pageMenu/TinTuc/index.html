@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../../bootstrap.min.css">
-    <link rel="stylesheet" href="../home/index.css">
+    <link rel="stylesheet" href="../../Synthetic.css">
     <link rel="stylesheet" href="../TinTuc/index.css">
     <script src="../../jquery-3.7.1.min.js"></script>
     <script src="../../bootstrap.min.js"></script>
@@ -42,7 +42,7 @@
                 <p class="col">VOUCHER 50K CHO ĐƠN 799K</p>
             </div>
             <div class="function row align-items-center bg-dark -3">
-                <a class="col navbar-brand text-center" href="#"><img class="logo" src="../Img/logo.png" alt=""></a>
+                <a class="col navbar-brand text-center" href="../home/index.html"><img class="logo" src="../Img/logo.png" alt=""></a>
                 <form class="col search_box row position-relative">
                     <input class="col form-control" type="text" placeholder="Bạn đang tìm gì...">
                     <button class="btn btn-dark button_search">
@@ -85,9 +85,20 @@
                     <li class="nav-item"><a class="nav-link" href="../SanPham/index.html">SẢN PHẨM</a></li>
                     <li class="nav-item"><a class="nav-link" href="../TinTuc/index.html">TIN TỨC</a></li>
                     <li class="nav-item"><a class="nav-link" href="../Sale/index.html">SALE</a></li>
-                    <li class="nav-item"><a class="nav-link text-danger" href="#../DanhMuc/index.html">DANH MỤC</a></li>
+                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#contentId" aria-expanded="false"
+                        aria-controls="contentId">DANH MỤC</a>
+                        <div class="collapse" id="contentId">
+                            <ul class="nav flex-column">
+                                <li class="nav-item" ><a href="../DanhMuc/MayDoDuongHuyet/index.html" class="nav-link">Máy đo đường huyết</a></li>
+                                <li class="nav-item" ><a href="../DanhMuc/MayDoHuyetAp/index.html" class="nav-link">Máy đo huyết áp</a></li>
+                                <li class="nav-item" ><a href="../DanhMuc/MayTaoOxi/index.html" class="nav-link">Máy tạo oxi</a></li>
+                                <li class="nav-item" ><a href="../DanhMuc/MayXongKhongKhi/index.html" class="nav-link">Máy xông không khí</a></li>
+                            </ul>
+                </div></li>
+
                 </ul>
             </nav>
+           
         </div>
     </header>
 

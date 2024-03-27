@@ -1,19 +1,8 @@
-:root{
-    --primary-black--color:black;
-    --primary-white--color:white;
-    --primary-gray--color:#E0E0E0;
-    --primary-yellow--color:#FFB41D;
-}
 
 
 
-a {    color: black;}
-.button_search {    color: black;    position: absolute;    right: 20px;    scale: 0.8;}
-
-.logo {    height: 80px;    width: auto;}
-
-.function span,i {    color: white;}
-
+/* header */
+/* carousel */
 .carousel-inner {width: 100%;}
 
 .carousel-item {object-fit: cover;}
@@ -32,20 +21,7 @@ a {    color: black;}
     border-radius: 50%;
     margin-right: 10px !important;
 }
-
-
-.dropdown{position: relative;}
-.collapse   {position: absolute;z-index: 1000; width: 150%; background-color: #E0E0E0; }
-.collapsing{ position: absolute;z-index: 1000; width: 150%; background-color: #E0E0E0; }
-
 /* main */
-main{ margin: 15px 125px;}
-    main a{padding: 15px 0;}
-    img{width:100%}
-    img{width: 100%;}
-    .item_nav{display: grid; grid-template-columns: repeat(4,auto);gap: 25px;}
-
-    button{background-color: var(--primary-black--color); color: var(--primary-white--color); border-radius:5px; padding:5px;}
 
     /* .vocher */
     .vochers {overflow: hidden; padding:10px;}
@@ -68,29 +44,6 @@ main{ margin: 15px 125px;}
         .flashSale_header .item span{color: black;}
 
 
-        /* .container item 5 */
-        .container{ display: grid;grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));; gap:15px; width: 100%;}
-             .item{overflow: hidden; cursor: pointer;}
-             .item .content{padding: 10px;background: white;border-radius:5px;}
-             .item .img{position: relative; }
-             .item .img .percent{ padding:5px;font-size:small;position: absolute; background-color: red;color: white; top:10px; right:10px;height: fit-content; border-radius:10px;}
-             .item .img span{ background-color: black; padding:8px;font-size:small; border-radius:50%; position: absolute; bottom: 10px; right:10px}
-             .item .img span i{margin: auto;}
-             .item p{font-size:small; min-height: 60px;}
-             .item .price{display: flex; margin:5px 0; }
-             .item .priceSale{ color: red; margin-right: 10px;font-size:small;}
-             .item .cost{ color: gray;text-decoration: line-through; font-size:small;}
-             .item .progress{ height: auto; line-height: normal; background-color: white;}
-             .item .progress .title{display: flex; align-items: center; margin:3px;}
-             .item .progress .title span{color: black; font-size: small;}
-             .item .progress .runningBar{ width: 100%; height:8px; background-color: rgb(208, 206, 206); border-radius:10px; overflow: hidden;} 
-             .item .progress .runningBar_inner{width: 30%; height: 100%; background-color: rgb(255, 193, 7);}
-
-        .footer .transition_button{display: flex; justify-content: center; align-items: center; margin-top:25px;}
-        .footer .transition_button div{ height:8px;width:8px;border: 1px solid black; border-radius: 50%; margin:0 5px;}
-        .footer .transition_button .active{background-color: black;}
-                            .watchAll{width: 100%; text-align: center;}
-                            .watchAll button{ color: white;margin:25px;}
 
 
     /* allProduct */
@@ -112,17 +65,3 @@ main{ margin: 15px 125px;}
     .tableContent .containerWapper{background-color: var(--primary-gray--color);padding:10px;}
     .tableContent .item .title{height:50px;overflow: hidden;}
                                 .containerItem{display: grid; grid-template-columns: repeat(2,auto);gap:15px; padding:10px;}
-
-footer {color: white; background-color: black; padding: 10px 0;}
-footer .container{display: block; }
-footer .contact{padding:10px; border-bottom: 1px solid white ;;align-items:center;height: 100%;}
-footer .contact form{flex-wrap: nowrap; height:50px ; z-index: 1;}
-footer .contact input{border: 1px solid transparent; outline: none; padding:10px;}
-footer .contact button{color: white; border: 1px  solid white; border-radius:0;}
-footer .MXH{justify-content: flex-end;}
-footer .MXH .MXH-item{border-radius: 5px; overflow: hidden;}
-footer  .zalo{ background-color: rgb(74, 74, 240); height: fit-content;}
-footer  .instagram{ margin:0 5px ; background-image: linear-gradient(to bottom right, purple, pink) ; height: 30px; width:30px; text-align: center; font-size: large;}
-footer  .facebook{background-color: blue; height: 30px; width:30px; text-align: center; font-size: large;}
-
-footer .information{ align-items: flex-start; padding-top: 10px;}

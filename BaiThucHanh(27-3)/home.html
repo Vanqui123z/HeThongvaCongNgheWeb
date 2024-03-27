@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../BigExercise/bootstrap.min.css">
+    <script src="../BigExercise/jquery-3.7.1.min.js"></script>
+    <script src="../BigExercise/bootstrap.min.js"></script>
+    <script src="../onCK/index.js"></script>
+    <style>
+        .col {
+            margin: 0;
+            padding: 0;
+        }
+
+        .row {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <header class="container-fluid">
+            <img src="../onCK/image.png" alt="bander" height="100%" width="100%">
+        </header>
+        <menu>
+            <ul class="navbar-nav">
+                <!-- Button trigger modal -->
+                <li class="nav item"><a href="./home.html" class="nav-item">Trang chủ</a></li>
+                <li class="nav item"><a href="#" class="nav-item" data-toggle="modal" data-target="#modelId">Dang Ki Tham Gia</a></li>
+            </ul>
+        </menu>
+
+
+
+        <!-- Modal -->
+        <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Thong Tin Hoc Vien</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <!-- name -->
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="name"></label>
+                            <input type="text" name="name" id="name" class="form-control" placeholder="Ho Ten"
+                                aria-describedby="helpIdNAME">
+                            <small id="helpIdNAME" class="text-danger">*</small>
+                        </div>
+                        <!-- sdt -->
+
+                        <div class="form-group">
+                            <label for="sdt"></label>
+                            <input type="number" name="sdt" id="sdt" class="form-control" placeholder="SDT"
+                                aria-describedby="helpIdSDT">
+                            <small id="helpIdSDT" class="text-danger">*</small>
+                        </div>
+                        <!-- birthday -->
+
+                        <div class="form-group">
+                            <label for="birthday"></label>
+                            <input type="day" name="birthday" id="birthday" class="form-control" placeholder="Ngay Sinh"
+                                aria-describedby="helpIdBD">
+                            <small id="helpIdBD" class="text-danger">*</small>
+                        </div>
+                        <!-- sex -->
+                        <div class="form-group">
+                            <label for="sex"></label>
+                            <select class="custom-select" name="sex" id="sex">
+                                <option selected value="boy">Nam</option>
+                                <option value="girl">Nữ</option>
+                            </select>
+                        </div>
+
+                        <!-- address -->
+
+                        <div class="form-group">
+                            <label for="address"></label>
+                            <input type="text" name="address" id="address" class="form-control" placeholder="Địa chỉ"
+                                aria-describedby="helpIdADDRESS">
+                            <small id="helpIdADDRESS" class="text-danger">*</small>
+                        </div>
+
+
+
+                        <!-- course -->
+                        <div class="form-group">
+                            <label for="course">Khoa hoc</label>
+                            <select class="custom-select" name="course" id="course">
+                                <option selected value="1">1 tuần</option>
+                                <option value="2">2 tuần</option>
+                                <option value="3">3 tuần</option>
+                                <option value="4">4 tuần</option>
+                            </select>
+                        </div>
+
+                        <!--Money -->
+
+                        <div class="form-group">
+                            <label for="money"></label>
+                            <input type="text" name="money" id="money" class="form-control" placeholder="Số tiền"
+                                aria-describedby="helpIdMONEY">
+                            <small id="helpIdMONEY" class="text-danger">*</small>
+                        </div>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+        <table class="table table-bordered table-hover table-strips">
+            <title>Danh Sach Hoc Vien Dang Ki</title>
+            <thead>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ và tên</th>
+                    <th>Giới tính</th>
+                    <th>Số điện thoại</th>
+                    <th>Ngày sinh</th>
+                    <th>Địa chỉ</th>
+                    <th>Khóa học</th>
+                    <th>Học phí</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Hoang Lam</td>
+                    <td>Nam</td>
+                    <td>0377682628</td>
+                    <td>20/3/2012</td>
+                    <td>123 Nguyen Du P3 Go Vap</td>
+                    <td>6 Tuan</td>
+                    <td>Hoc Phi</td>
+                </tr>
+            </tbody>
+        </table>
+        <footer class="w-100">
+            <p class="text-center"> 21004475-Le Van_Qui_DHCNTT17A</p>
+        </footer>
+    </main>
+
+</body>
+<script>
+
+</script>
+
+</html>
