@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../Synthetic.css">
     <script src="../../jquery-3.7.1.min.js"></script>
     <script src="../../bootstrap.min.js"></script>
+    <script src="./index.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -59,7 +60,7 @@
               
                 <div class="funciton_menu row align-items-center flex-nowap">
                       <!-- gio hang -->
-                    <a class="nav-link cart icon_function" href="#">
+                    <a class="nav-link cart icon_function" href="../../permenent/cart/index.html">
                         <div class="row align-items-center m-1">
                             <i class="fa-solid fa-cart-shopping"></i>
                             <div class="function_icon_content m-2"><span>Giỏ hàng</span></div>
@@ -76,11 +77,11 @@
                                     <p>jhgsdh</p>
                                 </div>
                                 <div class="button_number">
-                                    <button class="btn">+</button>
-                                    <button class="number">4</button>
+                                    <button class="btn add">+</button>
+                                    <button class="number">1</button>
                                     <button class="btn">-</button>
                                 </div>
-                                <button class="btn">x</button>
+                                <button class="btn btnDeleteSp" type="button">x</button>
                             </div>
                             <div class="row cartHoverContent">
                                 <img src="../Img/bìa_trangThietBiYTe.jpg" alt="" width="50px" height="50px" class="col-3"
@@ -90,11 +91,11 @@
                                     <p>jhgsdh</p>
                                 </div>
                                 <div class="button_number">
-                                    <button class="btn">+</button>
-                                    <button class="number">4</button>
+                                    <button class="btn add">+</button>
+                                    <button class="number">1</button>
                                     <button class="btn">-</button>
                                 </div>
-                                <button class="btn">x</button>
+                                <button class="btn btnDeleteSp" type="button">x</button>
                             </div>
                             <div class="row cartHoverContent">
                                 <img src="../Img/bìa_trangThietBiYTe.jpg" alt="" width="50px" height="50px" class="col-3"
@@ -104,13 +105,13 @@
                                     <p>jhgsdh</p>
                                 </div>
                                 <div class="button_number">
-                                    <button class="btn">+</button>
-                                    <button class="number">4</button>
+                                    <button class="btn add">+</button>
+                                    <button class="number">1</button>
                                     <button class="btn">-</button>
                                 </div>
-                                <button class="btn">x</button>
+                                <button class="btn btnDeleteSp" type="button">x</button>
                             </div>
-                            <button class="btn-primary">Thanh Toán</button>
+                            <button class="btn-primary mt-3" id="paymentButton">Thanh Toán</button>
                         </div>
                     </a>
                     <!-- hệ thông cửa HÀNG -->
@@ -138,8 +139,8 @@
                     </a>
     
                     <!-- sign in/ sign out  -->
+                    <a class="nav-link signInOut icon_function" href="../../permenent/signIn/index.html">
                     <div class="row align-items-center m-1">
-                            <a class="nav-link signInOut icon_function" href="../../permenent/signIn/index.html">
                             <i class="fa-regular fa-user"></i>
                             <div class="function_icon_content m-2">
                                 <span>Đăng nhập </span> <br>
@@ -147,8 +148,8 @@
                                     <i class="fa-solid fa-chevron-down"></i>
                                 </span>
                             </div>
-                        </a>
                         </div>
+                    </a>
     
                 </div>
 
@@ -199,16 +200,16 @@
                   
                                   <!-- sign in/ sign out  -->
                                   <a class="nav-link signInOut icon_function" href="../../permenent/signIn/index.html">
-                                      <div class="row align-items-center m-1">
-                                          <i class="fa-regular fa-user"></i>
-                                          <div class="function_icon_content m-2">
-                                              <span>Đăng nhập </span> <br>
-                                              <span>Đăng kí
-                                                  <i class="fa-solid fa-chevron-down"></i>
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </a>
+                                    <div class="row align-items-center m-1">
+                                        <i class="fa-regular fa-user"></i>
+                                        <div class="function_icon_content m-2">
+                                            <span>Đăng nhập </span> <br>
+                                            <span>Đăng kí
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </a>
                   
                               </div>
                             </div>
@@ -301,7 +302,7 @@
             <div class="content row">
 
                 <div class="vocher col">
-                    <div class="row">
+                    <div class="row ">
                         <span class="sign col-4"><span class="">W10</span></span>
                         <div class="content_vorcher col-8">
                             <div class="quantily">
@@ -321,7 +322,7 @@
                     </div>
                 </div>
                 <div class="vocher col">
-                    <div class="row">
+                    <div class="row ">
                         <span class="sign col-4"><span class="">W10</span></span>
                         <div class="content_vorcher col-8">
                             <div class="quantily">
@@ -341,7 +342,7 @@
                     </div>
                 </div>
                 <div class="vocher col">
-                    <div class="row">
+                    <div class="row ">
                         <span class="sign col-4"><span class="">W10</span></span>
                         <div class="content_vorcher col-8">
                             <div class="quantily">
@@ -361,7 +362,7 @@
                     </div>
                 </div>
                 <div class="vocher col">
-                    <div class="row">
+                    <div class="row ">
                         <span class="sign col-4"><span class="">W10</span></span>
                         <div class="content_vorcher col-8">
                             <div class="quantily">

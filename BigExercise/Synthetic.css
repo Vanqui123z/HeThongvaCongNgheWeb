@@ -46,8 +46,8 @@ header .row{flex-wrap: nowrap;}
     position: absolute;
     left: 40px;
     z-index: 0; } 
-.cart:hover .cartHover{display: block; position: absolute;left: 0;padding: 10px;background-color: aliceblue; width:400px; z-index: 10; border-radius: 5px ;}
-.cartHoverContent{align-items: center;}
+.cart:hover .cartHover{display: block; position: absolute;left: 0;padding: 20px;background-color: aliceblue; width:400px; z-index: 10; border-radius: 5px ;}
+.cartHoverContent{align-items: center;background-color: aliceblue; border: 1px solid var(--primary-gray--color);}
 .modalMenuHeader{display: none;}
 
 
@@ -106,7 +106,6 @@ input[type="checkbox"]{
     .funciton_menu_show span{color:black !important;}
 }
 
-
 main{ margin: 15px 125px;}
     main a{padding: 15px 0;}
     img{width:100%}
@@ -152,3 +151,6 @@ footer  .instagram{ margin:0 5px ; background-image: linear-gradient(to bottom r
 footer  .facebook{background-color: blue; height: 30px; width:30px; text-align: center; font-size: large;}
 
 footer .information{ align-items: flex-start; padding-top: 10px;}
+
+
+
