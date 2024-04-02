@@ -108,7 +108,7 @@ input[type="checkbox"]{
 
 main{ margin: 15px 125px;}
     main a{padding: 15px 0;}
-    img{width:100%}
+    img{width:100%;}
     img{width:100%;}
     .item_nav{display: grid; grid-template-columns: repeat(4,auto);gap: 25px;}
 
@@ -154,3 +154,4 @@ footer .information{ align-items: flex-start; padding-top: 10px;}
 
 
 
+.button_number{ display: flex; align-items: center;}

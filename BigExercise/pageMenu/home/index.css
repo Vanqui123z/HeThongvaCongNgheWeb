@@ -21,6 +21,9 @@
     border-radius: 50%;
     margin-right: 10px !important;
 }
+
+#carouselId {}
+#carouselId img{ object-fit: cover;}
 /* main */
 
     /* .vocher */
@@ -65,3 +68,4 @@
     .tableContent .containerWapper{background-color: var(--primary-gray--color);padding:10px;}
     .tableContent .item .title{height:50px;overflow: hidden;}
                                 .containerItem{display: grid; grid-template-columns: repeat(2,auto);gap:15px; padding:10px;}
+

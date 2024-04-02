@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../bootstrap.min.css">
-    <link rel="stylesheet" href="../../Synthetic.css">
+    <link rel="stylesheet" href="../../Boostrap_Jquery/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Synthetic/Synthetic.css">
     <link rel="stylesheet" href="../TinTuc/index.css">
-    <script src="../../jquery-3.7.1.min.js"></script>
-    <script src="../../bootstrap.min.js"></script>
+    <script src="../../Boostrap_Jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../Boostrap_Jquery/bootstrap.min.js"></script>
+    <script src="../../Synthetic/Synthetic.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -34,73 +36,7 @@
 
 
 <body>
-    <header>
-        <div class="container-fluid">
-            <div class="advertisement row">
-                <p class="col">🚛 FREESHIP MỌI ĐƠN TỪ 299K</p>
-                <p class="col">VOUCHER 10K CHO ĐƠN 99K</p>
-                <p class="col">VOUCHER 50K CHO ĐƠN 799K</p>
-            </div>
-            <div class="function row align-items-center bg-dark -3">
-                <a class="col navbar-brand text-center" href="../home/index.html"><img class="logo" src="../Img/logo.png" alt=""></a>
-                <form class="col search_box row position-relative">
-                    <input class="col form-control" type="text" placeholder="Bạn đang tìm gì...">
-                    <button class="btn btn-dark button_search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
-                <a class="nav-link" class="col location icon_function" href="#">
-                    <div class="row  align-items-center m-1">
-                        <i class="fa-solid fa-map-location-dot"></i>
-                        <div class="icon_function_content m-2">
-                            <span>Hệ thống </span> <br>
-                            <span>cửa hàng <i class="fa-solid fa-chevron-down"></i></span>
-                        </div>
-                    </div>
-
-                </a>
-                <a class="nav-link" class="col signInOut icon_function" href="#">
-                    <div class="row align-items-center m-1">
-                        <i class="fa-regular fa-user"></i>
-                        <div class="function_icon_content m-2">
-                            <span>Đăng nhập </span> <br>
-                            <span>Đăng kí
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </span>
-                        </div>
-                    </div>
-                </a>
-                <a class="nav-link" class="col cart icon_function" href="#">
-                    <div class="row align-items-center m-1">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <div class="function_icon_content m-2"><span>Giỏ hàng</span></div>
-                    </div>
-                </a>
-            </div>
-            <nav class="row justify-content-center">
-
-                <ul class="nav">
-                    <img src="../home/index.html" alt="">
-                    <li class="nav-item"><a class="nav-link" href="../home/index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../SanPham/index.html">SẢN PHẨM</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../TinTuc/index.html">TIN TỨC</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Sale/index.html">SALE</a></li>
-                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="collapse" data-target="#contentId" aria-expanded="false"
-                        aria-controls="contentId">DANH MỤC</a>
-                        <div class="collapse" id="contentId">
-                            <ul class="nav flex-column">
-                                <li class="nav-item" ><a href="../DanhMuc/MayDoDuongHuyet/index.html" class="nav-link">Máy đo đường huyết</a></li>
-                                <li class="nav-item" ><a href="../DanhMuc/MayDoHuyetAp/index.html" class="nav-link">Máy đo huyết áp</a></li>
-                                <li class="nav-item" ><a href="../DanhMuc/MayTaoOxi/index.html" class="nav-link">Máy tạo oxi</a></li>
-                                <li class="nav-item" ><a href="../DanhMuc/MayXongKhongKhi/index.html" class="nav-link">Máy xông không khí</a></li>
-                            </ul>
-                </div></li>
-
-                </ul>
-            </nav>
-           
-        </div>
-    </header>
+   <header id="header"></header>
 
     <main>
         <div class="container">
@@ -111,7 +47,7 @@
                    <div class="content_suKien">
                     <div class="suKien1 card_img">
                             <div class="card text-left">
-                                <img class="card-img-top" src="../Img/sk_Virut.jpg" alt="">
+                                <img class="card-img-top" src="../../Img/sk_Virut.jpg" alt="">
                                 <div class="card-body">
                                     <h4 class="card-title">
                                         Virus Marburg: Cảnh báo cho một loại dịch bệnh “đặc biệt nguy hiểm”</h4>
@@ -123,7 +59,7 @@
                     </div>
                     <div class="suKien2 card_img">
                         <div class="card text-left">
-                            <img class="card-img-top" src="../Img/sk_friday.png" alt="">
+                            <img class="card-img-top" src="../../Img/sk_friday.png" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">HAPPY FRIDAY 26/08 – “SĂN” NHIỆT KẾ HỒNG NGOẠI YT-1C CHỈ 649,000Đ
                                 </h4>
@@ -135,7 +71,7 @@
                     </div>
                     <div class="suKien3 card_img">
                         <div class="card text-left">
-                            <img class="card-img-top" src="../Img/sk_DoubleDay.webp" alt="">
+                            <img class="card-img-top" src="../../Img/sk_DoubleDay.webp" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">“SẰN” SALE DOUBLE DAY - GHÉ SHOP YUWELL NGAY!
                                 </h4>
@@ -152,7 +88,7 @@
                    <div class="sucKhoe">
                     <div class="sucKhoe1 card_img">
                         <div class="card text-left">
-                            <img class="card-img-top" src="../Img/sk_tieuDuong.webp" alt="">
+                            <img class="card-img-top" src="../../Img/sk_tieuDuong.webp" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">
                                     Bữa sáng cho người tiểu đường nên gồm những món ăn gì?
@@ -164,7 +100,7 @@
                     </div>
                     <div class="sucKhoe2 card_img">
                         <div class="card text-left">
-                            <img class="card-img-top" src="../Img/sk_huyetAp.webp" alt="">
+                            <img class="card-img-top" src="../../Img/sk_huyetAp.webp" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">
                                     Bữa sáng cho người tiểu đường nên gồm những món ăn gì?
@@ -176,7 +112,7 @@
                     </div>
                     <div class="sucKhoe3 card_img">
                         <div class="card text-left">
-                            <img class="card-img-top" src="../Img/sk_Insulin.webp" alt="">
+                            <img class="card-img-top" src="../../Img/sk_Insulin.webp" alt="">
                             <div class="card-body">
                                 <h4 class="card-title">
                                     Thuốc insulin – thuốc duy trì cuộc sống cho người bệnh tiểu đường
@@ -190,92 +126,7 @@
             </div>
         </div>
     </main>
-    <footer class="mt-5">
-        <div class="container">
-            <div class="contact row">
-                <p class="title col-3">ĐĂNG KÍ NHẬN TIN</p>
-                <form action="" class="col-6 form row">
-                    <input type="text form-control" placeholder="Email...">
-                    <button class="signIn text-nowrap">
-                        ĐĂNG KÝ
-                    </button>
-                </form>
-                <ul class="MXH nav col-3 row flex-end">
-                    <li class="MXH-item zalo"><a href="#"><img width="30" height="30"
-                                src="https://file.hstatic.net/200000397757/file/zalo-icon_0adb17d386cc4785b30ef66e470b4342.svg"
-                                alt="Liên hệ với chúng tôi qua Zalo"></a></li>
-                    <li class="MXH-item instagram"><a href="https://www.instagram.com" rel="nofollow"><i
-                                class="fa-brands fa-instagram"></i></i></a></li>
-                    <li class="MXH-item facebook"><a href="https://www.facebook.com" rel="nofollow"><i
-                                class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="information row">
-                <div class="col-6">
-                    <ul class=" nav GioiThieu">
-                        <li>
-                            <h5 class="nav-link">Giới thiệu</h5>
-                        </li>
-                        <li><a class="nav-link text-white" href="#">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Địa chỉ: VPĐD Yuwell Hồ Chí Minh: Lầu 2 Tòa nhà Đại Minh, 77 Hoàng Văn Thái, P. Tân Phú,
-                                Q.7, HCM</a></li>
-                        <li><a class="nav-link text-white" href="#">
-                                <i class="fa-solid fa-square-phone"></i>
-                                Số điện thoại: 0932 084 912 - 0798 622 989</a></li>
-                        <li><a class="nav-link text-white" href="#">
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: info.yuwell@gmail.com</a></li>
-                        <li><a href="#" class="nav-link">
-                                <img src="//theme.hstatic.net/200000478421/1000839622/14/logo_bct.png?v=444" width="104"
-                                    height="40" alt="Logo Bộ Công Thương">
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class=" nav ChinhSach">
-                        <li>
-                            <h6 class="nav-link">Chính Sách</h6>
-                        </li>
-                        <li><a class="nav-link text-white" href="#">Hướng dẫn đặt hàng</a></li>
-                        <li><a class="nav-link text-white" href="#">Thông tin chuyển khoản</a></li>
-                        <li><a class="nav-link text-white" href="#">Chính sách</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav ThongTinCuaHang">
-                        <li>
-                            <h6 class="nav-link">Hệ thống cửa hàng</h6>
-                        </li>
-                        <li><a class="nav-link text-white" href="#">Hồ Chí Minh</a></li>
-                        <li><a class="nav-link text-white" href="#">Hà Nội</a></li>
-                        <li><a class="nav-link text-white" href="#">Thanh Hóa</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class=" nav FageChungToi">
-                        <img src="" alt="">
-                        <h6>PHƯƠNG THỨC THANH TOÁN</h6>
-                        <div class="row payment">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/visa_new_37bf1b79c3374c34ab31dd9775d83691.jpg"
-                                width="50px" height="30px" alt="Image Visa">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/master_new_638b0cf1af794545a6e4d9a2765f2333.jpg"
-                                width="50px" height="30px" alt="Image Master">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/vnpay_new_ec21c03b2f4c49689d180c8a485c8d5b.jpg"
-                                width="50px" height="30px" alt="Image VNPay">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/cod_new_2316cf8e29bd4a858810a3d7b9eb39e4.jpg"
-                                width="50px" height="30px" alt="Image Cod">
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script src="./index.js"></script>
+   <footer id="footer" class="mt-5"></footer>
 </body>
 
 </html>

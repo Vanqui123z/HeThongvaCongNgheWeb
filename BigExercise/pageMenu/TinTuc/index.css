@@ -1,7 +1,7 @@
 main .container {
     display: block;
 }
-h5{border-left:3px solid black ; margin-bottom:20px; padding:5px;}
+main h5{border-left:3px solid black ; margin-bottom:20px; padding:5px;}
 
 .card-title {
     min-height: 13vh;

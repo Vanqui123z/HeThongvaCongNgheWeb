@@ -5,11 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../../bootstrap.min.css">
-    <link rel="stylesheet" href="../../Synthetic.css">
+    <link rel="stylesheet" href="../../Boostrap_Jquery/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Synthetic/Synthetic.css">
     <link rel="stylesheet" href="../SanPham/index.css">
-    <script src="../../jquery-3.7.1.min.js"></script>
-    <script src="../../bootstrap.min.js"></script>
+    <script src="../../Boostrap_Jquery/jquery-3.7.1.min.js"></script>
+    <script src="../../Boostrap_Jquery/bootstrap.min.js"></script>
+    <script src="../../Synthetic/Synthetic.js"></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <style>
@@ -34,227 +36,8 @@
 
 
 <body>
-    <header>
-        
-        <div class="container-fluid">
-            <div class="advertisement row">
-                <p class="col">🚛 FREESHIP MỌI ĐƠN TỪ 299K</p>
-                <p class="col">VOUCHER 10K CHO ĐƠN 99K</p>
-                <p class="col">VOUCHER 50K CHO ĐƠN 799K</p>
-            </div>
-            <div class="function row align-items-center bg-dark flex-nowrap">
-                <a class="col-4 navbar-brand text-center" href="../home/index.html"><img class="logo"
-                        src="../../pageMenu/Img/logo.png" alt=""></a>
-                <form class="col-4 search_box row position-relative">
-                    <input class="col form-control" type="text" placeholder="Bạn đang tìm gì...">
-                    <button class="btn btn-dark button_search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </form>
+    <header id="header"></header>
 
-
-
-              
-                <div class="funciton_menu row align-items-center flex-nowap">
-                      <!-- gio hang -->
-                    <a class="nav-link cart icon_function" href="#">
-                        <div class="row align-items-center m-1">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <div class="function_icon_content m-2"><span>Giỏ hàng</span></div>
-                        </div>
-    
-                        <!-- cart:hover -->
-                        <div class="cartHover">
-                            <div class="cartHover_control"></div>
-                            <div class="row cartHoverContent">
-                                <img src="../Img/bìa_trangThietBiYTe.jpg" alt="" width="50px" height="50px" class="col-3">
-                                <div class="title_item col-5">
-                                    <h5>bvnsdhws</h5>
-                                    <p>jhgsdh</p>
-                                </div>
-                                <div class="button_number">
-                                    <button class="btn">+</button>
-                                    <button class="number">4</button>
-                                    <button class="btn">-</button>
-                                </div>
-                                <button class="btn">x</button>
-                            </div>
-                            <div class="row cartHoverContent">
-                                <img src="../Img/bìa_trangThietBiYTe.jpg" alt="" width="50px" height="50px" class="col-3"
-                                    style="object-fit: cover;">
-                                <div class="title_item col-5">
-                                    <h5>bvnsdhws</h5>
-                                    <p>jhgsdh</p>
-                                </div>
-                                <div class="button_number">
-                                    <button class="btn">+</button>
-                                    <button class="number">4</button>
-                                    <button class="btn">-</button>
-                                </div>
-                                <button class="btn">x</button>
-                            </div>
-                            <div class="row cartHoverContent">
-                                <img src="../Img/bìa_trangThietBiYTe.jpg" alt="" width="50px" height="50px" class="col-3"
-                                    style="object-fit: cover;">
-                                <div class="title_item col-5">
-                                    <h5>bvnsdhws</h5>
-                                    <p>jhgsdh</p>
-                                </div>
-                                <div class="button_number">
-                                    <button class="btn">+</button>
-                                    <button class="number">4</button>
-                                    <button class="btn">-</button>
-                                </div>
-                                <button class="btn">x</button>
-                            </div>
-                            <button class="btn-primary">Thanh Toán</button>
-                        </div>
-                    </a>
-                    <!-- hệ thông cửa HÀNG -->
-    
-                    <a href="#" class="nav-link w-0 p-0" >
-                        <div class="location" data-toggle="collapse" data-target="#contentStore"
-                            aria-expanded="false" aria-controls="contentStore">
-                            <div class="row  align-items-center m-1">
-                                <i class="fa-solid fa-map-location-dot"></i>
-                                <div class="icon_function_content m-2">
-                                    <span>Hệ thống </span> <br>
-                                    <span>cửa hàng <i class="fa-solid fa-chevron-down"></i></span>
-                                </div>
-    
-                            </div>
-                            <div class="collapse" id="contentStore">
-                                <ul class="nav flex-column">
-                                    <li class="nav-item"><a href="#" class="nav-link">Hồ Chí Minh</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Hà Nội</a></li>
-                                    <li class="nav-item"><a href="#" class="nav-link">Thanh Hóa</a></li>
-    
-                                </ul>
-                            </div>
-                        </div>
-                    </a>
-    
-                    <!-- sign in/ sign out  -->
-                    <a class="nav-link signInOut icon_function" href="#">
-                        <div class="row align-items-center m-1">
-                            <i class="fa-regular fa-user"></i>
-                            <div class="function_icon_content m-2">
-                                <span>Đăng nhập </span> <br>
-                                <span>Đăng kí
-                                    <i class="fa-solid fa-chevron-down"></i>
-                                </span>
-                            </div>
-                        </div>
-                    </a>
-    
-                </div>
-
-
-
-
-                <div class="modalMenuHeader">
-                    <button type="button" class="btn btn-dark ml-5" data-toggle="modal" data-target="#model_menu_Id" id="buttonMenu">
-                        <i class="fa-solid fa-bars"></i>
-                      </button>
-                      
-                      <!-- Modal -->
-                      <div class="modal fade" id="model_menu_Id" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
-                        <div class="modal-dialog" id="menuHeader" role="document">
-                            <div class="modal-content">
-                                <div class="funciton_menu_show">
-                                    <!-- gio hang -->
-                                  <a class="nav-link cart icon_function" href="#">
-                                      <div class="row align-items-center m-1">
-                                          <i class="fa-solid fa-cart-shopping"></i>
-                                          <div class="function_icon_content m-2"><span>Giỏ hàng</span></div>
-                                      </div>
-                  
-                                  </a>
-                                  <!-- hệ thông cửa HÀNG -->
-                  
-                                  <a href="#" class="nav-link w-0 p-0" >
-                                      <div class="location" data-toggle="collapse" data-target="#contentStore"
-                                          aria-expanded="false" aria-controls="contentStore">
-                                          <div class="row  align-items-center m-1">
-                                              <i class="fa-solid fa-map-location-dot"></i>
-                                              <div class="icon_function_content m-2">
-                                                  <span>Hệ thống </span> <br>
-                                                  <span>cửa hàng <i class="fa-solid fa-chevron-down"></i></span>
-                                              </div>
-                  
-                                          </div>
-                                          <div class="collapse" id="contentStore">
-                                              <ul class="nav flex-column">
-                                                  <li class="nav-item"><a href="#" class="nav-link">Hồ Chí Minh</a></li>
-                                                  <li class="nav-item"><a href="#" class="nav-link">Hà Nội</a></li>
-                                                  <li class="nav-item"><a href="#" class="nav-link">Thanh Hóa</a></li>
-                  
-                                              </ul>
-                                          </div>
-                                      </div>
-                                  </a>
-                  
-                                  <!-- sign in/ sign out  -->
-                                  <a class="nav-link signInOut icon_function" href="#">
-                                      <div class="row align-items-center m-1">
-                                          <i class="fa-regular fa-user"></i>
-                                          <div class="function_icon_content m-2">
-                                              <span>Đăng nhập </span> <br>
-                                              <span>Đăng kí
-                                                  <i class="fa-solid fa-chevron-down"></i>
-                                              </span>
-                                          </div>
-                                      </div>
-                                  </a>
-                  
-                              </div>
-                            </div>
-                        </div>
-                      </div>
-                 </div>
-
-
-
-            </div>
-
-
-
-  
-
-
-
-
-
-
-            <!-- menu -->
-            <nav class="row justify-content-center">
-                <ul class="nav">
-                    <img src="../home/index.html" alt="">
-                    <li class="nav-item"><a class="nav-link" href="../home/index.html">HOME</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../SanPham/index.html">SẢN PHẨM</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../TinTuc/index.html">TIN TỨC</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../Sale/index.html">SALE</a></li>
-                    <li class="nav-item dropdown"><a href="#" class="nav-link dropdown-toggle" data-toggle="collapse"
-                            data-target="#contentId" aria-expanded="false" aria-controls="contentId">DANH MỤC</a>
-                        <div class="collapse" id="contentId">
-                            <ul class="nav flex-column">
-                                <li class="nav-item"><a href="../DanhMuc/MayDoDuongHuyet/index.html"
-                                        class="nav-link">Máy đo đường huyết</a></li>
-                                <li class="nav-item"><a href="../DanhMuc/MayDoHuyetAp/index.html" class="nav-link">Máy
-                                        đo huyết áp</a></li>
-                                <li class="nav-item"><a href="../DanhMuc/MayTaoOxi/index.html" class="nav-link">Máy tạo
-                                        oxi</a></li>
-                                <li class="nav-item"><a href="../DanhMuc/MayXongKhongKhi/index.html"
-                                        class="nav-link">Máy xông không khí</a></li>
-                            </ul>
-                        </div>
-                    </li>
-
-                </ul>
-            </nav>
-
-        </div>
-    </header>
     <main class="container">
             <div class="header">
                 <h3 class="mb-5">Tất cả sản phẩm</h3>
@@ -365,7 +148,7 @@
                                             <div class="item sp1">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                        <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -382,7 +165,7 @@
                                             <div class="item sp2">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
+                                                        <img src="../../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -399,7 +182,7 @@
                                             <div class="item sp1">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                        <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -416,7 +199,7 @@
                                             <div class="item sp3">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
+                                                        <img src="../../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
                                                             alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
@@ -436,7 +219,7 @@
                                             <div class="item sp4">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                        <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -453,7 +236,7 @@
                                             <div class="item sp5">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
+                                                        <img src="../../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -470,7 +253,7 @@
                                             <div class="item sp6">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                        <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -487,7 +270,7 @@
                                             <div class="item sp7">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
+                                                        <img src="../../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -513,7 +296,7 @@
                                             <div class="item sp4">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                        <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -530,7 +313,7 @@
                                             <div class="item sp5">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
+                                                        <img src="../../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -547,7 +330,7 @@
                                             <div class="item sp6">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                        <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -564,7 +347,7 @@
                                             <div class="item sp7">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
+                                                        <img src="../../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -583,7 +366,7 @@
                                             <div class="item sp1">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                        <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -600,7 +383,7 @@
                                             <div class="item sp2">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
+                                                        <img src="../../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -617,7 +400,7 @@
                                             <div class="item sp1">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                        <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -634,7 +417,7 @@
                                             <div class="item sp3">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
+                                                        <img src="../../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
                                                             alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
@@ -662,7 +445,7 @@
                                             <div class="item sp1">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                        <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -679,7 +462,7 @@
                                             <div class="item sp2">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
+                                                        <img src="../../Img/Nhiệt Kế Hồng Ngoại Yuwell YT-1C.webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -696,7 +479,7 @@
                                             <div class="item sp1">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
+                                                        <img src="../../Img/Máy đo huyết áp Giọng nói YE660E.jpg" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -713,7 +496,7 @@
                                             <div class="item sp3">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
+                                                        <img src="../../Img/Máy Xông Khí Dung Cầm Tay M102 ( Dạng Lưới ).webp"
                                                             alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
@@ -733,7 +516,7 @@
                                             <div class="item sp4">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                        <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -750,7 +533,7 @@
                                             <div class="item sp5">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
+                                                        <img src="../../Img/Máy Tạo Oxy Yuwell 9F-3AW.png" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -767,7 +550,7 @@
                                             <div class="item sp6">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
+                                                        <img src="../../Img/Máy tạo oxy 7F-3E(W).webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -784,7 +567,7 @@
                                             <div class="item sp7">
                                                 <div class="content">
                                                     <div class="img">
-                                                        <img src="../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
+                                                        <img src="../../Img//Máy Xông Khí Dung Nén Khí 405B.webp" alt="">
                                                         <span><i style="font-size:small;"
                                                                 class="fa-solid fa-bag-shopping"></i></span>
                                                     </div>
@@ -818,91 +601,8 @@
                 </div>
             </div>
     </main>
-    <footer class="mt-5">
-        <div class="container">
-            <div class="contact row">
-                <p class="title col-3">ĐĂNG KÍ NHẬN TIN</p>
-                <form action="" class="col-5 form row">
-                    <input type="text form-control" placeholder="Email...">
-                    <button class="signIn text-nowrap">
-                        ĐĂNG KÝ
-                    </button>
-                </form>
-                <ul class="MXH nav col-lg-4 col-sm-8 row flex-end">
-                    <li class="MXH-item zalo"><a href="#"><img width="30" height="30"
-                                src="https://file.hstatic.net/200000397757/file/zalo-icon_0adb17d386cc4785b30ef66e470b4342.svg"
-                                alt="Liên hệ với chúng tôi qua Zalo"></a></li>
-                    <li class="MXH-item instagram"><a href="https://www.instagram.com" rel="nofollow"><i
-                                class="fa-brands fa-instagram"></i></i></a></li>
-                    <li class="MXH-item facebook"><a href="https://www.facebook.com" rel="nofollow"><i
-                                class="fa-brands fa-facebook" aria-hidden="true"></i></a></li>
-                </ul>
-            </div>
-            <div class="information row">
-                <div class="col-6">
-                    <ul class=" nav GioiThieu">
-                        <li>
-                            <h5 class="nav-link">Giới thiệu</h5>
-                        </li>
-                        <li><a class="nav-link text-white" href="#">
-                                <i class="fa-solid fa-location-dot"></i>
-                                Địa chỉ: VPĐD Yuwell Hồ Chí Minh: Lầu 2 Tòa nhà Đại Minh, 77 Hoàng Văn Thái, P. Tân Phú,
-                                Q.7, HCM</a></li>
-                        <li><a class="nav-link text-white" href="#">
-                                <i class="fa-solid fa-square-phone"></i>
-                                Số điện thoại: 0932 084 912 - 0798 622 989</a></li>
-                        <li><a class="nav-link text-white" href="#">
-                                <i class="fa-solid fa-envelope"></i>
-                                Email: info.yuwell@gmail.com</a></li>
-                        <li><a href="#" class="nav-link">
-                                <img src="//theme.hstatic.net/200000478421/1000839622/14/logo_bct.png?v=444" width="104"
-                                    height="40" alt="Logo Bộ Công Thương">
-                            </a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class=" nav ChinhSach">
-                        <li>
-                            <h6 class="nav-link">Chính Sách</h6>
-                        </li>
-                        <li><a class="nav-link text-white" href="#">Hướng dẫn đặt hàng</a></li>
-                        <li><a class="nav-link text-white" href="#">Thông tin chuyển khoản</a></li>
-                        <li><a class="nav-link text-white" href="#">Chính sách</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class="nav ThongTinCuaHang">
-                        <li>
-                            <h6 class="nav-link">Hệ thống cửa hàng</h6>
-                        </li>
-                        <li><a class="nav-link text-white" href="#">Hồ Chí Minh</a></li>
-                        <li><a class="nav-link text-white" href="#">Hà Nội</a></li>
-                        <li><a class="nav-link text-white" href="#">Thanh Hóa</a></li>
-                    </ul>
-                </div>
-                <div class="col">
-                    <ul class=" nav FageChungToi">
-                        <img src="" alt="">
-                        <h6>PHƯƠNG THỨC THANH TOÁN</h6>
-                        <div class="row payment">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/visa_new_37bf1b79c3374c34ab31dd9775d83691.jpg"
-                                width="50px" height="30px" alt="Image Visa">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/master_new_638b0cf1af794545a6e4d9a2765f2333.jpg"
-                                width="50px" height="30px" alt="Image Master">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/vnpay_new_ec21c03b2f4c49689d180c8a485c8d5b.jpg"
-                                width="50px" height="30px" alt="Image VNPay">
-                            <img class="col"
-                                src="https://file.hstatic.net/1000253775/file/cod_new_2316cf8e29bd4a858810a3d7b9eb39e4.jpg"
-                                width="50px" height="30px" alt="Image Cod">
-                        </div>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <footer id="footer" class="mt-5"></footer>
+
     <script src="./index.js"></script>
 </body>
 
