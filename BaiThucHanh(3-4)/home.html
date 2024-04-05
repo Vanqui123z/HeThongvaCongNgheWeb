@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./Boostrap_Jquery/bootstrap.min.css">
+    <script src="./Boostrap_Jquery/jquery-3.7.1.min.js"></script>
+    <script src="./Boostrap_Jquery/bootstrap.min.js"></script>
+    <style>
+        .row {
+            padding: 0;
+            ;
+            margin: 5px;
+            border: 1px solid gray
+        }
+
+        .Inputradio {
+            border-left: 1px solid gray
+        }
+
+        input {
+            outline: none;
+            border: none;
+            border-left: 1px solid black;
+        }
+
+        .col-4 {
+            padding: 0;
+            margin: 0;
+        }
+
+        td {
+            height: 30px;
+            padding: 0 10px;
+        }
+
+        .title {
+            width: 100%;
+            height: 50px;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        table {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="./images/backgroud.jpg" height="300px" width="100%" alt="backgroud">
+    </header>
+    <main class="container-fluid row  justify-content-between w-100 p-5">
+
+        <div class="tableWrapper table-bodered col-4 border">
+            <div class="title">Bảng tin thị trường</div>
+            <table class="tableVang table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center" colspan="2">Vang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mua vao</td>
+                        <td>Ban ra</td>
+                    </tr>
+                    <tr>
+                        <td id="VangMua" class="priceThiTruong"></td>
+                        <td id="VangBan" class="priceThiTruong"></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tableUSD table-bordered">
+                <thead>
+                    <tr>
+                        <th class="text-center" colspan="2">USD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Mua vao</td>
+                        <td>Ban ra</td>
+                    </tr>
+                    <tr>
+                        <td id="UsdMua" class="priceThiTruong"></td>
+                        <td id="UsdBan" class="priceThiTruong"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <form action="" class="col-4 border">
+            <div class="title">
+                <p>Cập nhật giá thị trường</p>
+            </div>
+            <div class="row">
+                <label for="" class="col-4">Mua vao</label>
+                <input type="text" class="col-8" id="txtMua" placeholder="Mua vao">
+                <small class="text-danger" id="errorMua"></small>
+            </div>
+            <div class="row">
+                <label for="" class="col-4">Ban ra</label>
+                <input type="text" class="col-8" id="txtBan" placeholder="Ban ra">
+                <small class="text-danger" id="errorBan"></small>
+
+            </div>
+            <div class="row justify-content-center">
+                <select name="optionCar" id="optionCar">
+                    <option value="./images/car1.jpg; 35000">Toyota</option>
+                    <option value="./images/car2.avif;15000">Ford</option>
+                    <option value="./images/car3.webp">Kia</option>
+                    <option value="./images/car4.webp;32000">Civic</option>
+                    <option value="./images/car5.webp;50000">Farrari</option>
+                </select>
+            </div>
+            <div class="row">
+                <label for="" class="col-4"></label>
+                <div class="Inputradio">
+                    <input type="radio" name="radio" id="vang"> <b>Vang</b>
+                    <input type="radio" name="radio" id="usd"> <b>USD</b>
+                </div>
+            </div>
+            <div class="row buttonSubmit justify-content-center">
+                <button id="Update" disabled type="submit">Update</button>
+                <button id="State" disabled>State</button>
+            </div>
+        </form>
+        <aside class="col-4 border">
+            <div class="title">
+                <p>Bảng báo giá</p>
+            </div>
+            <div class="contentAside">
+                <div class="informationCar">
+                    <p>- với kiển dăng thể thao, sang trọng</p>
+                    <p>- nối bặt, it ton nhiên liệu</p>
+                    <p>- kiểu đáng thể thao</p>
+                </div>
+                <div class="imgCart">
+                    <img id="idCart" src="images/car1.jpg" width="100%" alt="">
+                </div>
+                <div id="priceCar">35000USD</div>
+            </div>
+        </aside>
+    </main>
+    <script>
+
+
+
+
+        function StateState() {
+            $("#txtMua").on('input', function () {
+                var txtValue = $(this).val();
+                var expNumber = /^[0-9]+$/;
+
+                if (txtValue != '' && expNumber.test(txtValue)) {
+                    $("#State").removeAttr("disabled");
+                } else {
+                    $("#State").prop("disabled", true);
+
+                }
+            });
+        }
+        function StateUpdate() {
+            $("input[type=radio],#txtMua,#txtBan").on("input change", function () {
+                var txtMua = $("#txtMua").val()
+                var TxtBan = $("#txtBan").val()
+                var checked = $("input[type=radio]:checked").length > 0
+                if (txtMua != "" && txtBan != "" && checked == true) {
+                    $("#Update").prop("disabled", false)
+                } else {
+                    $("#Update").prop("disabled", true)
+                }
+            })
+        }
+
+        function optionCar() {
+            $("#optionCar").change(function () {
+                var optionSelectd = $(this).val()
+                mang = optionSelectd.split(";")
+                $("#idCart").attr("src", mang[0])
+                $("#priceCar").html(mang[1])
+            })
+        }
+
+        function UpdateCar() {
+            $("#Update").on("click", function (e) {
+                e.preventDefault();
+
+                console.log($("#txtMua").val())
+                var valueMua = $("#txtMua").val()
+                var valueBan = $("#txtBan").val()
+                console.log($(".priceThiTruong"))
+                $(".priceThiTruong").each(function () {
+                    if ($(this).val() != "") {
+                        $(this).html("");
+                    }
+                })
+                if ($("#vang").is(":checked")) {
+                    $("#VangMua").html(valueMua)
+                    $("#VangBan").html(valueBan)
+                } else if ($("#usd").is(":checked")) {
+                    $("#UsdMua").html(valueMua)
+                    $("#UsdBan").html(valueBan)
+                }
+            })
+        }
+        $(document).ready(function () {
+            StateState();
+            StateUpdate();
+            optionCar();
+            UpdateCar();
+        });
+
+    </script>
+</body>
+
+</html>
