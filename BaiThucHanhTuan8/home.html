@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./bootstrap.min.js"></script>
+    <style>
+        [class*=col-] {
+            margin: 0;
+            padding: 0;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            margin: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" class="col-12">
+            <div class="row">
+                <label class="col-2">Ho Ten</label>
+                <input type="text" id="hoTen" class="col-lg-4 col-sm-6">
+                <small class="text-danger" id="errorHoTen"></small>
+            </div>
+            <div class="row">
+                <label class="col-2">Lop</label>
+                <select name="" id="class" class="col-lg-4 col-sm-6">
+                    <option value="Dai hoc ky thuat phan men 17A">Dai hoc ky thuat phan men 17A</option>
+                    <option value="CnTT 17A">CnTT 17A</option>
+                    <option value="CnTT 17B">CnTT 17B</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-2">Mon hoc</label>
+                <select name="" id="subject" class="col-lg-4 col-sm-6">
+                    <option value="Huong doi tuong">Huong doi tuong</option>
+                    <option value="Ki thuat lap trinh">Ki thuat lap trinh</option>
+                    <option value="phan tich du lieu">phan tich du lieu</option>
+                </select>
+            </div>
+            <div class="row">
+                <label class="col-2">Loai:</label>
+                <div class="groudInput col-lg-4 col-sm-6 row">
+                    <div class="col-md-6 col-sm-12 row">
+                        <input type="radio" name="loai" id="" value="Ly Thuyet">
+                        <label for="">Ly Thuyet</label>
+                    </div>
+                    <div class="col-md-6 col-sm-12 row">
+                        <input type="radio" name="loai" id="" value="Thuc Hanh">
+                        <label for="">Thuc Hanh</label>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <button disabled>Dang ki</button>
+
+        <table class="table table-bordered text-center">
+            <thead>
+                <tr>
+                    <th>Ho ten</th>
+                    <th>Lop</th>
+                    <th>Mon hoc dang ki</th>
+                    <th>Loai</th>
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function () {
+            var hoten = $("#hoTen");
+            var dangKyBtn = $("button");
+    
+            hoten.focus();
+    
+            function ktHoTen(hoten) {
+                var Exp = /^[A-Z]/;
+    
+                hoten.on("input", function () {
+                    if (hoten.val() === "") {
+                        $("#errorHoTen").html("Không được để trống!");
+                        dangKyBtn.prop("disabled", true); 
+                    } else {
+                        if (!Exp.test(hoten.val())) {
+                            $("#errorHoTen").html("Nhập chữ cái đầu in hoa!");
+                            dangKyBtn.prop("disabled", true);
+                        } else {
+                            $("#errorHoTen").html("");
+                            dangKyBtn.prop("disabled", false);
+                        }
+                    }
+                });
+            }
+    
+            function checkForm() {
+                var hoTen = $("#hoTen").val();
+                var lop = $("#class").val();
+                var monHoc = $("#subject").val();
+                var loai = $("input[name='loai']:checked").val();
+    
+                if (hoTen === "" || lop === "" || monHoc === "" || typeof loai === "undefined") {
+                    alert("Vui lòng điền đầy đủ thông tin.");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+    
+            ktHoTen(hoten);
+    
+            dangKyBtn.click(function () {
+                if (checkForm()) {
+                    var hoTen = $("#hoTen").val();
+                    var lop = $("#class").val();
+                    var monHoc = $("#subject").val();
+                    var loai = $("input[name='loai']:checked").val();
+    
+                    $("tbody").append("<tr><td>" + hoTen + "</td><td>" + lop + "</td><td>" + monHoc + "</td><td>" + loai + "</td></tr>");
+                }
+            });
+        });
+    </script>
+    
+</body>
+
+</html>
