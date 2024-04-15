@@ -23,7 +23,7 @@ $(document).ready(function () {
         }
     });
 
-    
+})
    
 /*
 // thêm header và footer vào từng trang web
@@ -40,6 +40,7 @@ function loadHTML(url, elementId) {
         if (this.readyState == 4 && this.status == 200) {
             // Chèn nội dung của yêu cầu vào phần tử có ID là elementId
             document.getElementById(elementId).innerHTML = this.responseText;
+            
         }
     };
 
@@ -54,10 +55,10 @@ function loadHTML(url, elementId) {
 loadHTML('../../Synthetic/header.html', 'header'); // Tải header.html và chèn vào phần tử có ID là 'header'
 loadHTML('../../Synthetic/footer.html', 'footer'); // Tải footer.html và chèn vào phần tử có ID là 'footer'
 loadHTML('../../../Synthetic/headerDM.html', 'headerDM'); // Tải header.html và chèn vào phần tử có ID là 'headerDM'
+loadHTML('../../../Synthetic/footer.html', 'footerDM'); // Tải header.html và chèn vào phần tử có ID là 'headerDM'
 loadHTML('../../Synthetic/headerPM.html', 'headerPM'); // Tải header.html và chèn vào phần tử có ID là 'headerPM'
 
 
 
 
-});
 

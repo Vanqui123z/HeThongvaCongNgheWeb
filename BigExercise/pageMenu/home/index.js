@@ -55,7 +55,11 @@ function copyToClipboard(copyText) {
 
 }
 
-
-
+$(document).ready(function(){
+    $(".img").click(function(){
+        window.location.href = "../sp/index.html";
+    });
+});
+    
 
 
