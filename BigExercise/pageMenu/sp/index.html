@@ -118,14 +118,14 @@
                     <p>Mã giảm giá bạn có thể sử dụng:</p>
                         <div class="vochers row">
                             <div class="vocher">
-                                <span>W10</span>
+                                <span id="nameVorcher">W10</span>
                             </div>
                             <div class="vocher">
-                                <span>W20</span>
+                                <span id="nameVorcher">W20</span>
                             </div> <div class="vocher">
-                                <span>W30</span>
+                                <span id="nameVorcher">W30</span>
                             </div> <div class="vocher">
-                                <span>W40</span>
+                                <span id="nameVorcher">W40</span>
                             </div>
                         </div>
                        <div class="color">
@@ -135,20 +135,20 @@
                             <div class="title">
                                 <span>Kích thước</span>
                             </div>
-                            <div class="content row">
-                                <div class="select"><span>Small</span></div>
-                                <div class="select"><span>Big</span></div>
+                            <div class="content row" id="selects">
+                                <button style="border-radius: 0;" onclick="toggleOpacity(this)" class="select" ><span>Small</span></button>
+                                <button style="border-radius: 0;" onclick="toggleOpacity(this)" class="select"><span>Big</span></button>
     
                             </div>
                        </div>
                        <div class="option row">
-                        <div class="button_number">
+                        <div class="button_number col">
                             <button class="btn add">+</button>
                             <button class="number">1</button>
                             <button class="btn sub">-</button>
                         </div>
-                        <button class="btn btn-dark ">Thêm vào giỏ</button>
-                        <button class="btn btn-light"><a class="nav-link" href="../../permenent/cart/index.html">Mua ngay</a></button>
+                        <button class="btn btn-dark col text-nowrap" id="addToCart"><a class="nav-link text-white" href="../../permenent/cart/index.html">Thêm vào giỏ</a></button>
+                        <button class="btn btn-light col"><a class="nav-link" href="../../permenent/signIn/index.html">Mua ngay</a></button>
                        </div>
                 </div>
             </div>
